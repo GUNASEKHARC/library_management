@@ -26,5 +26,5 @@ You can import books data from an external API to populate your library collecti
 ## Technologies Used
 
 - **Backend**: Flask, SQLAlchemy (Python)
-- **Frontend**: HTML, CSS (Bootstrap)
+- **Frontend**: HTML, CSS
 - **Database**: PostgreSQL
