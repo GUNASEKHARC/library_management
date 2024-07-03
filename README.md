@@ -1,3 +1,5 @@
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=40&color=%2379A500&height=67&duration=3000&center=true&lines=%F0%9F%85%B6%F0%9F%86%81%F0%9F%85%B4%F0%9F%85%B4%F0%9F%86%83%F0%9F%85%B8%F0%9F%85%BD%F0%9F%85%B6%F0%9F%86%82">
+
 # Library Management System
 
 This project is a web application built with Flask for managing a library system. It allows users to manage books, members, and transactions.
@@ -28,3 +30,81 @@ You can import books data from an external API to populate your library collecti
 - **Backend**: Flask, SQLAlchemy (Python)
 - **Frontend**: HTML, CSS
 - **Database**: PostgreSQL
+
+## Screenshots:
+
+### Dashboard
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/dashboard.png" width="100%">
+
+### Importing 20 books using APIs
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/Importing%2020%20books%20using%20apis.png" width="100%">
+
+### Add Member
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/Add%20Member.png" width="100%">
+
+### Member added successfully
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/Member%20added%20successfully.png" width="100%">
+
+### Edit Member
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/edit%20member.png" width="100%">
+
+### Delete Member
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/Delete%20member.png" width="100%">
+
+### Member deleted successfully
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/Member%20deleted%20successfully.png" width="100%">
+
+
+
+### Books view and search
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/Books%20view%20and%20search%20.png" width="100%">
+
+### Search option
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/Search%20option.png" width="100%">
+
+### Add Book
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/add%20book.png" width="100%">
+
+### Edit Book
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/edit%20book.png" width="100%">
+
+### Book updated successfully
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/book%20updated%20successfully.png" width="100%">
+
+### Delete Book
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/delete%20book.png" width="100%">
+
+### Book deleted successfully
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/book%20deleted%20successfully.png" width="100%">
+
+### Issue a Book with Availability
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/issue%20a%20book%20with%20availability.png" width="100%">
+
+### Transactions after Issue
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/transactions%20after%20issue.png" width="100%">
+
+### Return Book
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/Return%20book.png" width="100%">
+
+### Transactions after Return
+
+<img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/transactions%20after%20return.png" width="100%">
+
+
