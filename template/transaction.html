@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transactions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .table {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .table th, .table td {
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            text-align: left;
+        }
+        .table th {
+            background-color: #e9ecef;
+            font-weight: bold;
+            text-align: center;
+        }
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #f8f9fa;
+        }
+        .btn {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Transactions</h1>
+        <a href="{{ url_for('issue_book') }}" class="btn btn-primary mb-3">Issue Book</a>
+        <a href="{{ url_for('return_book') }}" class="btn btn-secondary mb-3">Return Book</a>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Transaction ID</th>
+                        <th>Book ID</th>
+                        <th>Member ID</th>
+                        <th>Issue Date</th>
+                        <th>Return Date</th>
+                        <th>Rent Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for transaction in transactions %}
+                    <tr>
+                        <td>{{ transaction.transactionid }}</td>
+                        <td>{{ transaction.bookid }}</td>
+                        <td>{{ transaction.memberid }}</td>
+                        <td>{{ transaction.issue_date }}</td>
+                        <td>{{ transaction.return_date }}</td>
+                        <td>{{ transaction.rent_fee }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Book</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Book</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="bookid">Book ID</label>
+                <input type="text" class="form-control" id="bookid" name="bookid" required>
+            </div>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="authors">Authors</label>
+                <input type="text" class="form-control" id="authors" name="authors" required>
+            </div>
+            <div class="form-group">
+                <label for="average_rating">Average Rating</label>
+                <input type="number" step="0.1" class="form-control" id="average_rating" name="average_rating">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN</label>
+                <input type="text" class="form-control" id="isbn" name="isbn" required>
+            </div>
+            <div class="form-group">
+                <label for="isbn13">ISBN13</label>
+                <input type="text" class="form-control" id="isbn13" name="isbn13">
+            </div>
+            <div class="form-group">
+                <label for="language_code">Language Code</label>
+                <input type="text" class="form-control" id="language_code" name="language_code">
+            </div>
+            <div class="form-group">
+                <label for="num_pages">Number of Pages</label>
+                <input type="number" class="form-control" id="num_pages" name="num_pages">
+            </div>
+            <div class="form-group">
+                <label for="ratings_count">Ratings Count</label>
+                <input type="number" class="form-control" id="ratings_count" name="ratings_count">
+            </div>
+            <div class="form-group">
+                <label for="text_reviews_count">Text Reviews Count</label>
+                <input type="number" class="form-control" id="text_reviews_count" name="text_reviews_count">
+            </div>
+            <div class="form-group">
+                <label for="publication_date">Publication Date</label>
+                <input type="date" class="form-control" id="publication_date" name="publication_date">
+            </div>
+            <div class="form-group">
+                <label for="publisher">Publisher</label>
+                <input type="text" class="form-control" id="publisher" name="publisher">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Book</button>
+        </form>
+    </div>
+</body>
+</html>
