@@ -108,3 +108,38 @@ You can import books data from an external API to populate your library collecti
 <img src="https://github.com/GUNASEKHARC/library_management/blob/main/Screenshots/transactions%20after%20return.png" width="100%">
 
 
+###DB:
+
+CREATE TABLE books (
+    bookid VARCHAR(50) PRIMARY KEY,
+    title VARCHAR(200) NOT NULL,
+    authors VARCHAR(200) NOT NULL,
+    average_rating FLOAT,
+    isbn VARCHAR(13) UNIQUE NOT NULL,
+    isbn13 VARCHAR(13),
+    language_code VARCHAR(10),
+    num_pages INTEGER,
+    ratings_count INTEGER,
+    text_reviews_count INTEGER,
+    publication_date DATE,
+    publisher VARCHAR(200)
+);
+
+
+CREATE TABLE members (
+    memberid VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    phone VARCHAR(15),
+    address TEXT,
+    join_date DATE NOT NULL
+);
+
+CREATE TABLE transactions (
+    transactionid SERIAL PRIMARY KEY,
+    bookid VARCHAR(50) REFERENCES books(bookid) ON DELETE CASCADE,
+    memberid VARCHAR(50) REFERENCES members(memberid) ON DELETE CASCADE,
+    issue_date DATE NOT NULL,
+    return_date DATE,
+    rent_fee NUMERIC(10, 2)
+);
